@@ -3,7 +3,11 @@
 //  Cueto_Calculator
 //
 //  Created by ALEXA Cueto on 11/11/25.
-//
+// NEOPULSE TEAM:
+// COLLO PAUL BENEDICT V.
+// CUETO ALEXA JOYCE G
+// PUA CHARLES MICHAEL G.
+// WEI WENXUAN
 
 import UIKit
 
@@ -77,6 +81,22 @@ class ViewController: UIViewController {
         
         txtFirstNumber.text = ""
         txtSecondNumber.text = ""    }
+    
+    
+    @IBAction func btnClear(_ sender: Any) {
+        txtFirstNumber.text = ""
+        txtSecondNumber.text = ""
+        tvResults.text = ""
+    }
+    
+    
+    @IBAction func btnRandom(_ sender: Any) {
+        let randomNum1 = Int.random(in: 1...100000)
+        let randomNum2 = Int.random(in: 1...100000)
+        
+        txtFirstNumber.text = String(randomNum1)
+        txtSecondNumber.text = String(randomNum2)
+    }
     
 }
 
